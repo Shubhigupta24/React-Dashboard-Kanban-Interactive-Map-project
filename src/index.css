@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@import 'leaflet/dist/leaflet.css';
+/* Lower Leaflet's z-index so your sidebar can appear above */
+.leaflet-top,
+.leaflet-bottom,
+.leaflet-pane,
+.leaflet-control {
+  z-index: 0 !important;
+}
